@@ -1,0 +1,48 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Noto Sans TC","Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+}
+
+body{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    text-align: center;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    .stampContainer{
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 500px;
+        margin-top: 4rem;
+        position: relative;
+        .stampBox{
+            border: 1px solid #ccc;
+            width: 100px;
+            height: 100px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            img.stampImg{
+                width: 80%;
+                height: 80%;
+                display: none;
+            }
+        }
+        img.catHand{
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none; /* 讓滑鼠可以點擊其他元素 */
+            z-index: 800;
+            transition: transform 0.1s ease-out; /* 點擊時動畫 */
+        }
+    }
+
+    
+
+}
